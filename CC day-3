@@ -34,5 +34,35 @@ void bubbleSort(int houses[], int len)
             break;
         }
     }
+
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<string.h>
+int frequency_of_name()
+{
+    char word[]="shreepathi";
+    int len=strlen(word);
+    char tch;
+    for(int t=0;t<len;t++)
+    {
+        tch=word[t];
+        int wordCount=0;
+        for(int w=0;w<len;w++)
+        {
+            if(tch==word[w])
+            {
+                wordCount++;
+            }
+        }
+        printf("%c=%d times\n",tch,wordCount);
+}
+}
+
+int main() {
+   int flag=frequency_of_name();
+   return 0;
+}
                                                                                                                                     1,1           Top
 
