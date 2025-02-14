@@ -1,0 +1,112 @@
+    
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    int num,n;
+    cout<<"Enter value of n: ";
+    cin>>n;
+    cout<<"Enter the value of num: ";
+    cin>>num;
+    while(num>0)
+    {
+        int r=num%n;
+        if(r<10)
+        cout<<r;
+        else
+        {
+        char ch='A'+r-10;
+        cout<<ch;
+    }
+num=num/n;
+}
+}
+
+
+    
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int exp(int n)
+{
+    int count=0;
+    while(n%2==0)
+    {
+        count++;
+        n=n/2;
+    }
+    return count;
+}
+int main() {
+    // Write C++ code here
+    int a,b;
+    cin>>a>>b;
+    int max=0,ans=a;
+    for(int i=a;i<=b;i++)
+    {
+        int cur=exp(i);
+        if(cur>max)
+        {
+            max=cur;
+            ans=i;
+        }
+    }
+    cout<<ans;
+}
+
+
+
+    
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    int v,w;
+    cout<<"Enter number of vehicles:";
+    cin>>v;
+    cout<<"Enter the number of wheels:";
+    cin>>w;
+    int c=(w-(2*v))/2;
+    cout<<"c= "<<c;
+    int b=v-c;
+    cout<<"b="<<b;
+}
+
+
+
+    
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    int n;
+    cin>>n;
+     int a[n][n];
+     a[0][0]=1;
+     for(int i=1;i<n;i++)
+     {
+         for(int j=0;j<=i;j++)
+         {
+             if(j==0)
+             {
+                 a[i][j]=a[i-1][i-1];
+             }
+                 else
+                 a[i][j]=a[i][j-1]+a[i-1][j-1];
+         }
+    }
+    cout<<a[n-1][n-1];
+}
+
+  
+  
